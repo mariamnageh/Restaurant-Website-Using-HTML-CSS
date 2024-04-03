@@ -1,0 +1,206 @@
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body{
+    font-family:"open sans", sans-serif;;
+}
+
+/*Utility Classes*/
+
+.primary-text{
+    color: #dda01b;
+}
+
+.btn{
+     display: inline-block;
+     padding: 15px 30px;
+     border: none;
+     border-radius: 15px;
+}
+
+.btn-primary{
+      color: wheat;
+      border: 1px solid #fff;
+}
+
+.btn-secondary{
+        color: #fff;
+        background: #383848;
+        margin-top: 2rem;
+}
+
+.btn-primary:hover, 
+.btn-secondary{
+       background: #dda01b;
+}
+
+
+
+
+/* Header */
+
+ul{
+    list-style: none;
+}
+
+a{
+     text-decoration: none;
+}
+
+header{
+    height: 100vh;
+    background: url('./images/home_bg.jpeg') center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar ul{
+     display: flex;
+     margin-right: 100px;
+}
+
+#navbar ul li a{
+     padding: 15px 20px;
+     color: white;
+     font-weight: 600;
+}
+#navbar ul li a:hover{
+      border-bottom: 2px solid #e4b95b ;
+}
+
+
+#navbar img{
+    width: 80px ;
+    margin-left: 100px;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 75%;
+}
+
+header .content h1{
+     font-size: 40px;
+     color: white;
+}
+
+header .content p{
+      margin: 20px 0 40px;
+      color: white;
+}
+
+header::before{
+      content: "" ;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgb(0,0,0,0.6);   /* opacity of the img*/
+}
+
+header *{
+      z-index: 10;
+}
+
+.container{
+  
+     max-width: 1110px;
+     margin: auto;
+}
+
+/*About*/
+
+#about {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+}
+
+#about  .title ,
+#offers .title
+{
+       text-align: center;
+       margin-bottom: 4rem ;
+}
+
+
+#about h2 ,
+#offers h2{
+       font-size: 40px;
+       margin-bottom: 20px;
+}
+#about h2{
+        color: #383848;   
+}
+
+#about .title p{
+        font-size: 14px;
+        color: #9a9a9a;
+        font-weight: 600;
+}
+
+#about .about-content{
+       display: flex;
+       justify-content: space-between;
+}
+#about .about-content img{
+        width: 450px;
+}
+
+#about .about-content p{
+        color: #9a9a9a;
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+}
+
+/*Offers*/
+
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url('./images/offer-background.jpg') center center/cover fixed;
+}
+
+#offers h2{
+     color: #e4b95b;
+}
+#offers .title p{
+      color: #fff;
+      font-weight: 500;
+}
+
+#offers .offers-items{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       color: #fff;
+}
+
+#offers .offers-items img{
+        width: 200px;
+        
+}
+
+#offers .offers-items h3{
+        font-size: 25px;
+        margin: 15px 0;
+}

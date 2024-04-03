@@ -5,6 +5,10 @@
      box-sizing: border-box;
 }
 
+html{
+      scroll-behavior: smooth;
+}
+
 body{
     font-family:"open sans", sans-serif;;
 }
@@ -414,4 +418,17 @@ textarea{
 
 #contact .btn:hover{
                 background-color: #383848;
+}
+
+/*Footer*/
+#footer{
+                background: #383848;
+                text-align: center;
+                color: #fff;
+                padding: 15px 0;
+                font-size: 14px;
+}
+
+#footer a{
+                color: #e4b95b;
 }

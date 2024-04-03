@@ -328,5 +328,22 @@ header *{
             display: flex;
             justify-content: center;
             align-items: center;
-       
+            flex-wrap: wrap;
+            opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover{
+            opacity: 1;
+}
+
+/*Contact*/
+
+#contact{
+           padding: 5rem 0;
+           background: #f4f4f4;
+     
+}
+
+#contact .container{
+             max-width: 900px;
 }
